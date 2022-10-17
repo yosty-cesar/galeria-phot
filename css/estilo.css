@@ -1,0 +1,79 @@
+html{
+    
+    background:no-repeat center center fixed url('https://1.bp.blogspot.com/-e7YBZrQVR6I/WgFeKLfd_aI/AAAAAAAAABI/8K2VeMairgwflOKWRqdWWC-lZzElVn8NgCLcBGAs/s1600/galaxy%2B2.gif');
+    -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+    body{
+
+    backdrop-filter:blur(5px);
+        
+        margin: 0;
+        padding: 0;
+    }
+
+    h1 {
+        width: auto;
+        position: relative;
+        font-size: 5rem;
+        font-family: sans-serif;
+        -webkit-text-stroke: 0.3vw #383d52;
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    h1::before{
+        content: attr(data-text);
+        position: absolute;
+        text-align: center;
+        width: 0%;
+        height: 100%;
+        color: #4fed51;
+        -webkit-text-stroke: 0vw #383d52;
+        /*border-right: 2px solid #4fed51;*/
+        overflow: hidden;
+        animation: space 5s linear infinite;
+        
+
+
+    }
+    @keyframes space {
+        0%{
+            width: 0;
+            }
+        100%{
+            width: 48%;
+        }
+    }
+
+.gallery{
+height: 100vh;
+width: 50%;
+
+    
+ }
+   
+   
+.img{
+    width: 80%;
+    margin-left: 60%;
+    
+    display: block;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+
+.img:hover{
+    transform: scale(1.1);
+}
+
+  H2{
+
+    background-color: #4fed51;
+  }
+
+
+
